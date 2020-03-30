@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'devops-jenkins-training'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0041ba6184df44579765126d8d9dd53c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_972addd8eb1f4e09b501a8bd739a1b86 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
