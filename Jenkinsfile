@@ -42,6 +42,11 @@ stage('Build') {
                    echo commonFile.ZipFileName("feature/zipFile","arti")        
             }
         }
+  stage('Prepare Artifacts 2'){
+            steps{
+                   echo artifact.ZipFileName "feature/zipFile" "arti"     
+            }
+        }
    }
 }
 
