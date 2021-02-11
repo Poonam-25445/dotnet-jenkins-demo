@@ -35,12 +35,12 @@ stage('Build') {
                 }
             }
       }
+  }
  stage('Prepare Artifacts'){
             steps{
                    echo CommonFiles.getZipFileName("feature/zipFile","arti")        
             }
         }
    }
- }
 }
 
