@@ -45,7 +45,7 @@ stage('Build') {
   stage('Prepare Artifacts 2'){
             steps{
              scripts{
-                    echo artifact.ZipFileName "feature/zipFile" "arti"  
+                    echo artifact.getArtifactFileName("feature/zipFile","arti")
                  }        
             }
         }
