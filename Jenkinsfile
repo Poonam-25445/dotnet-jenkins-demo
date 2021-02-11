@@ -1,5 +1,6 @@
 @Library('SharedLibrary') _
 import com.lutron.saltmarsh.CommonFiles
+def commonFile = new CommonFiles()
 
 pipeline {
 agent any
@@ -38,7 +39,7 @@ stage('Build') {
   }
  stage('Prepare Artifacts'){
             steps{
-                   echo CommonFiles.ZipFileName("feature/zipFile","arti")        
+                   echo commonFile.ZipFileName("feature/zipFile","arti")        
             }
         }
    }
