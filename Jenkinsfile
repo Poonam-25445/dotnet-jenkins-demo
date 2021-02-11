@@ -1,4 +1,5 @@
-@Library('ApolloSharedLibraries') _
+@Library('SharedLibrary') _
+import com.lutron.saltmarsh.CommonFiles
 
 pipeline {
 agent any
@@ -36,7 +37,7 @@ stage('Build') {
       }
  stage('Prepare Artifacts'){
             steps{
-                   echo artifact.getZipFileName("feature/zipFile","arti")        
+                   echo CommonFiles.getZipFileName("feature/zipFile","arti")        
             }
         }
    }
