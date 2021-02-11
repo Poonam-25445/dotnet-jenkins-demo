@@ -39,7 +39,7 @@ stage('Build') {
   }
  stage('Prepare Artifacts'){
             steps{
-                   echo trial.getZipFileName("feature/zipFile","arti")        
+                   echo trial.ZipFileName("feature/zipFile","arti")        
             }
         }
    }
