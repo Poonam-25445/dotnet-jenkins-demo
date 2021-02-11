@@ -1,3 +1,5 @@
+@Library('ApolloSharedLibraries')
+
 pipeline {
 agent any
  
@@ -34,7 +36,7 @@ stage('Build') {
       }
  stage('Prepare Artifacts'){
             steps{
-                   echo getZipFileName("feature/zipFile","arti")        
+                   echo artifact.getZipFileName("feature/zipFile","arti")        
             }
         }
    }
