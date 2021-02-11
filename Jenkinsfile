@@ -32,6 +32,11 @@ stage('Build') {
                 }
             }
       }
+ stage('Prepare Artifacts'){
+            steps{
+                   echo getZipFileName("feature/zipFile","arti")        
+            }
+        }
    }
  }
 }
