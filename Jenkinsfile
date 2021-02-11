@@ -1,5 +1,5 @@
 @Library('SharedLibrary') _
-import com.lutron.saltmarsh.CommonFiles
+import com.trial.sm.CommonFiles
 def commonFile = new CommonFiles()
 
 pipeline {
