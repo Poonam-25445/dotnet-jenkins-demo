@@ -1,5 +1,4 @@
 @Library('SharedLibrary') _
-import com.trial.sm.CommonFiles
 import com.trial.sm.Artifactory
 def commonFile = new CommonFiles()
 
