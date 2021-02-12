@@ -12,11 +12,13 @@ options {
 stages {
  stage('Prepare Artifacts'){
             steps{
+                script{
                    Map Input = [branchName: 'feature/pdf' , typeName: 'feature/pdf']
                    echo commonFile.ZipFileName("feature/zipFile","arti") 
                    
                    Map filePath = [repoPath: '../../CI/BusinessService/' , branchName: 'feature/pdf']
                    echo commonFile.getArtifactPath(filePath)
+               }
             }
         }
         
