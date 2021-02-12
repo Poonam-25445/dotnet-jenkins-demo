@@ -1,5 +1,5 @@
 @Library('SharedLibrary') _
-import com.trial.sm.Artifactory
+import com.trial.sm.CommonFiles
 def commonFile = new CommonFiles()
 
 pipeline {
