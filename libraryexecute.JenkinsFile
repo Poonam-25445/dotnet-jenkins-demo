@@ -13,7 +13,8 @@ options {
 stages {
  stage('Prepare Artifacts'){
             steps{
-                   def input = [
+                script{
+                   Map input = [
                        'branchName': 'feature/pdf' , 
                        'typeName': 'artifacts'
                    ]
@@ -21,6 +22,7 @@ stages {
                    
                    Map filePath = [repoPath: '../../CI/BusinessService/' , branchName: 'feature/pdf']
                    echo commonFile.getArtifactPath(filePath)
+                   }
             }
         }
         
