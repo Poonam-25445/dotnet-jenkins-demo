@@ -1,7 +1,3 @@
-@Library('SharedLibrary') _
-import com.trial.sm.CommonFiles
-def commonFile = new CommonFiles()
-
 pipeline {
 agent any
  
@@ -35,18 +31,8 @@ stage('Build') {
                     bat '"C:\\Program Files\\dotnet\\dotnet.exe" publish -c release -o /app --no-restore' 
                 }
             }
+         }
       }
-  }
- stage('Prepare Artifacts'){
-            steps{
-                   echo commonFile.ZipFileName("feature/zipFile","arti")        
-            }
-        }
-  stage('Prepare Artifacts 2'){
-            steps{
-                   echo artifact.getArtifactFileName("feature/zipFile","arti")       
-            }
-        }
    }
 }
 
