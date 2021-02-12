@@ -14,7 +14,7 @@ stages {
             steps{
                 script{
                    Map Input = [branchName: 'feature/pdf' , typeName: 'feature/pdf']
-                   echo commonFile.ZipFileName("feature/zipFile","arti") 
+                   echo commonFile.ZipFileName(Input) 
                    
                    Map filePath = [repoPath: '../../CI/BusinessService/' , branchName: 'feature/pdf']
                    echo commonFile.getArtifactPath(filePath)
