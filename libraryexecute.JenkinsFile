@@ -12,7 +12,7 @@ options {
 stages {
  stage('Prepare Artifacts'){
             steps{
-                   Map input = [
+                   def input = [
                        'branchName': 'feature/pdf' , 
                        'typeName': 'artifacts'
                    ]
